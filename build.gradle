@@ -3,6 +3,11 @@ apply plugin: 'io.quarkus.gradle.plugin'
 
 sourceCompatibility = 1.8
 
+ext {
+    quarkusVersion = '0.11.0'
+}
+
+
 buildscript {
     repositories {
         mavenCentral()
@@ -10,7 +15,7 @@ buildscript {
             url 'http://repository.jboss.org/nexus/content/groups/public'
         }
         dependencies {
-            classpath 'io.quarkus:quarkus-gradle-plugin:0.11.0'
+            classpath "io.quarkus:quarkus-gradle-plugin:0.11.0"
         }
     }
 }
@@ -20,6 +25,6 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'io.quarkus', name: 'quarkus-resteasy', version: '0.11.0'
-    implementation group: 'io.quarkus', name: 'quarkus-arc', version: '0.11.0'
+    implementation group: 'io.quarkus', name: 'quarkus-resteasy', version: quarkusVersion
+    implementation group: 'io.quarkus', name: 'quarkus-arc', version: quarkusVersion
 }
