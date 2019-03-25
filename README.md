@@ -8,3 +8,15 @@ This repository is a practice for [quarkus](https://quarkus.io/)
 * Gradle 5.1 or more
 * Maven 3.6.0 or more
 * GraalVM rc12 or more
+
+## Development with Maven
+
+```bash
+./mvnw compile quarkus:dev
+```
+
+## Development with Gradle
+
+```bash
+./gradlew quarkusDev
+```
