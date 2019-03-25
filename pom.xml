@@ -7,8 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <properties>
     <surefire-plugin.version>2.22.0</surefire-plugin.version>
-    <java.version>1.8</java.version>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <java.version>1.8</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <quarkus.version>0.12.0</quarkus.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,6 +38,10 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-spring-di</artifactId>
     </dependency>
   </dependencies>
   <build>

@@ -33,4 +33,5 @@ repositories {
 dependencies {
     compileOnly group: 'io.quarkus', name: 'quarkus-resteasy', version: quarkusVersion
     compileOnly group: 'io.quarkus', name: 'quarkus-arc', version: quarkusVersion
+    compileOnly group: 'io.quarkus', name: 'quarkus-spring-di'
 }
