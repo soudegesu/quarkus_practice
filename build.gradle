@@ -33,5 +33,7 @@ repositories {
 dependencies {
     compileOnly group: 'io.quarkus', name: 'quarkus-resteasy', version: quarkusVersion
     compileOnly group: 'io.quarkus', name: 'quarkus-arc', version: quarkusVersion
-    compileOnly group: 'io.quarkus', name: 'quarkus-spring-di'
+    compileOnly group: 'io.quarkus', name: 'quarkus-spring-di', version: quarkusVersion
+
+    compileOnly group: 'org.springframework', name: 'spring-context', version: '5.1.5.RELEASE'
 }
