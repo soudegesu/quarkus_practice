@@ -8,7 +8,7 @@ buildscript {
             url 'http://repository.jboss.org/nexus/content/groups/public'
         }
         dependencies {
-            classpath "io.quarkus:quarkus-gradle-plugin:0.11.0"
+            classpath "io.quarkus:quarkus-gradle-plugin:0.12.0"
         }
     }
 }
@@ -20,7 +20,7 @@ sourceCompatibility = 1.8
 
 ext {
     artifactId = "quarkus-practice"
-    quarkusVersion = '0.11.0'
+    quarkusVersion = '0.12.0'
 }
 
 repositories {
