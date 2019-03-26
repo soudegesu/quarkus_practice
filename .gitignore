@@ -21,3 +21,6 @@ gradle-app.setting
 # Artifact
 build
 target
+
+# Log file
+*.log
